@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Check, Clock, RotateCcw, Star } from "lucide-react";
+import { Check, Clock, RotateCcw, Star, ExternalLink } from "lucide-react";
 
 const plans = [
   {
@@ -18,7 +18,7 @@ const plans = [
   },
   {
     name: "Premium",
-    price: "100",
+    price: "120",
     description: "Custom Animation — proiect unic de la zero",
     features: [
       "Animație custom completă",
@@ -73,7 +73,7 @@ const PricingSection = () => {
               key={plan.name}
               className={`relative rounded-2xl p-8 transition-all duration-300 ${
                 plan.highlighted
-                  ? "bg-hero-gradient text-primary-foreground shadow-2xl shadow-primary/30 scale-[1.02] md:scale-105 border-0"
+                  ? "animate-gradient-shift-bg text-primary-foreground shadow-2xl shadow-primary/30 scale-[1.02] md:scale-105 border-0"
                   : plan.name === "Basic"
                   ? "bg-card border-2 border-primary/20 shadow-md"
                   : "bg-card border border-border shadow-md"
@@ -86,7 +86,7 @@ const PricingSection = () => {
                 </div>
               )}
 
-              <h3 className={`font-display text-2xl font-bold mb-2 ${plan.highlighted ? "" : ""}`}>
+              <h3 className="font-display text-2xl font-bold mb-2">
                 {plan.name}
               </h3>
               <p className={`text-sm mb-6 ${plan.highlighted ? "text-primary-foreground/80" : "text-muted-foreground"}`}>
@@ -107,7 +107,7 @@ const PricingSection = () => {
                 ))}
               </div>
 
-              <div className={`flex items-center gap-4 text-sm mb-8 pt-6 border-t ${plan.highlighted ? "border-primary-foreground/20" : "border-border"}`}>
+              <div className={`flex items-center gap-4 text-sm mb-6 pt-6 border-t ${plan.highlighted ? "border-primary-foreground/20" : "border-border"}`}>
                 <div className="flex items-center gap-1.5">
                   <Clock className="h-4 w-4" />
                   <span>{plan.delivery}</span>
@@ -117,6 +117,16 @@ const PricingSection = () => {
                   <span>{plan.revisions} revizii</span>
                 </div>
               </div>
+
+              {/* Vezi Exemple button */}
+              <Button
+                variant="ghost"
+                size="sm"
+                className={`w-full mb-3 ${plan.highlighted ? "text-primary-foreground/90 hover:text-primary-foreground hover:bg-white/10" : "text-primary hover:bg-primary/5"}`}
+              >
+                <ExternalLink className="mr-2 h-4 w-4" />
+                Vezi Exemple
+              </Button>
 
               <Button
                 onClick={() => scrollTo("order")}

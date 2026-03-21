@@ -17,10 +17,7 @@ const OrderSection = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-
-    // For now just simulate — Telegram integration will be added later
     await new Promise((resolve) => setTimeout(resolve, 1000));
-
     setSubmitted(true);
     setLoading(false);
   };
@@ -42,6 +39,8 @@ const OrderSection = () => {
       </section>
     );
   }
+
+  const planOrder = ["Basic", "Premium", "Standard"];
 
   return (
     <section id="order" className="py-24">
@@ -82,14 +81,16 @@ const OrderSection = () => {
           <div>
             <label className="text-sm font-medium mb-2 block">Pachetul dorit</label>
             <div className="grid grid-cols-3 gap-3">
-              {["Basic", "Standard", "Premium"].map((plan) => (
+              {planOrder.map((plan) => (
                 <button
                   type="button"
                   key={plan}
                   onClick={() => setFormData({ ...formData, plan })}
                   className={`py-3 rounded-xl text-sm font-medium transition-all duration-200 ${
                     formData.plan === plan
-                      ? "bg-hero-gradient text-primary-foreground shadow-md"
+                      ? plan === "Premium"
+                        ? "animate-gradient-shift-bg text-primary-foreground shadow-md"
+                        : "bg-hero-gradient text-primary-foreground shadow-md"
                       : "bg-secondary text-secondary-foreground hover:bg-secondary/80"
                   }`}
                 >

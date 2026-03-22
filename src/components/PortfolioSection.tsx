@@ -53,7 +53,7 @@ const PortfolioSection = () => {
                <PlayCircle className="w-6 h-6 md:w-8 md:h-8 text-primary group-hover:text-white transition-colors duration-700" />
              </div>
              
-             <div className="flex flex-col items-start mr-4">
+             <div className="flex flex-col items-center text-center mr-4">
                <span className="font-bold text-lg md:text-3xl whitespace-nowrap text-foreground group-hover:text-white transition-colors duration-700">
                  Explorează Profilul
                </span>

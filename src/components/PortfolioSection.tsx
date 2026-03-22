@@ -43,21 +43,21 @@ const PortfolioSection = () => {
              href="https://vimeo.com/artiomotion?fl=pp&fe=sh" 
              target="_blank" 
              rel="noreferrer"
-             className="relative group flex items-center justify-center gap-4 px-8 py-6 md:px-14 md:py-8 rounded-[2.5rem] bg-secondary/30 backdrop-blur-xl border border-white/10 shadow-[0_0_50px_hsl(var(--primary)/0.2)] hover:shadow-[0_0_100px_hsl(var(--primary)/0.6)] transition-all duration-700 hover:scale-110 overflow-hidden z-10 hover:border-primary/50"
+             className="relative group flex items-center justify-center gap-4 px-5 py-6 md:px-14 md:py-8 rounded-[2.5rem] bg-secondary/30 backdrop-blur-xl border border-white/10 shadow-[0_0_50px_hsl(var(--primary)/0.2)] hover:shadow-[0_0_100px_hsl(var(--primary)/0.6)] transition-all duration-700 hover:scale-110 overflow-hidden z-10 hover:border-primary/50"
            >
              {/* Liquid hover fill effect */}
              <div className="absolute inset-0 bg-hero-gradient opacity-0 group-hover:opacity-100 transition-opacity duration-700 -z-10" />
              <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 mix-blend-overlay pointer-events-none" />
              
-             <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-primary/20 flex items-center justify-center group-hover:bg-white/20 transition-all duration-700 group-hover:scale-110">
+             <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-primary/20 flex items-center justify-center group-hover:bg-white/20 flex-shrink-0 transition-all duration-700 group-hover:scale-110">
                <PlayCircle className="w-6 h-6 md:w-8 md:h-8 text-primary group-hover:text-white transition-colors duration-700" />
              </div>
              
              <div className="flex flex-col items-start mr-4">
-               <span className="font-bold text-xl md:text-3xl text-foreground group-hover:text-white transition-colors duration-700">
+               <span className="font-bold text-lg md:text-3xl whitespace-nowrap text-foreground group-hover:text-white transition-colors duration-700">
                  Explorează Profilul
                </span>
-               <span className="text-sm md:text-base text-muted-foreground group-hover:text-white/80 transition-colors duration-700 font-medium">
+               <span className="text-xs md:text-base whitespace-nowrap text-muted-foreground group-hover:text-white/80 transition-colors duration-700 font-medium">
                  vimeo.com/artiomotion
                </span>
              </div>

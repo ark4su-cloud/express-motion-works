@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Eye } from "lucide-react";
+import { ArrowRight, Eye, Star, Zap, CheckCircle2 } from "lucide-react";
 import { useState, useEffect, useCallback } from "react";
 
 const services = [
@@ -49,26 +49,17 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
-      {/* Animated gradient background */}
-      <div className="absolute inset-0 bg-hero-bg" />
-      <div className="absolute inset-0 hero-noise opacity-[0.03]" />
-      
-      {/* Floating orbs */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-[10%] left-[15%] w-72 h-72 rounded-full bg-primary/20 blur-[100px] animate-float" />
-        <div className="absolute bottom-[20%] right-[10%] w-96 h-96 rounded-full bg-accent/15 blur-[120px] animate-float" style={{ animationDelay: "2s" }} />
-        <div className="absolute top-[50%] left-[60%] w-64 h-64 rounded-full bg-blue-500/10 blur-[80px] animate-float" style={{ animationDelay: "4s" }} />
-        <div className="absolute top-[20%] right-[30%] w-48 h-48 rounded-full bg-violet-400/10 blur-[60px] animate-pulse-glow" />
-      </div>
-
-      {/* Grid pattern */}
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(139,92,246,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(139,92,246,0.03)_1px,transparent_1px)] bg-[size:60px_60px]" />
-
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-36 pb-16 md:pt-20 md:pb-0">
       <div className="container mx-auto px-4 relative z-10 text-center">
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-8 backdrop-blur-sm border border-primary/20">
-          <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-          After Effects Specialist
+        <div className="flex flex-wrap justify-center gap-4 mb-8">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium backdrop-blur-sm border border-primary/20">
+            <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+            After Effects Specialist
+          </div>
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-500/10 text-green-500 text-sm font-medium backdrop-blur-sm border border-green-500/20">
+            <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+            Contact rapid
+          </div>
         </div>
 
         <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mb-4">
@@ -91,30 +82,44 @@ const HeroSection = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Button variant="hero" size="lg" className="text-base px-8 py-6 animate-gradient-shift" onClick={() => scrollTo("order")}>
-            Plasează Comanda
+          <Button size="lg" className="text-base px-8 py-6 liquid-gradient-btn text-white rounded-xl font-bold w-full sm:w-auto" onClick={() => scrollTo("order")}>
+            Contactează-mă
             <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
-          <Button variant="heroOutline" size="lg" className="text-base px-8 py-6" onClick={() => scrollTo("pricing")}>
-            <Eye className="mr-2 h-5 w-5" />
-            Vezi Prețurile
           </Button>
         </div>
 
-        <div className="mt-16 flex items-center justify-center gap-8 text-muted-foreground text-sm">
-          <div className="flex flex-col items-center">
-            <span className="text-2xl font-display font-bold text-foreground">50+</span>
-            <span>Proiecte Finalizate</span>
+        <div className="mt-12 md:mt-20 max-w-5xl mx-auto flex flex-col sm:flex-row flex-wrap justify-center gap-4">
+          <div className="flex-1 w-full sm:w-auto px-6 py-4 rounded-full bg-secondary/50 backdrop-blur-xl border border-white/5 flex flex-row items-center gap-5 shadow-2xl transition hover:-translate-y-1 hover:border-blue-500/30 relative overflow-hidden group">
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+            <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 relative z-10 border border-primary/20 group-hover:scale-110 transition-transform">
+              <CheckCircle2 className="w-6 h-6 text-primary" />
+            </div>
+            <div className="flex flex-col text-left relative z-10">
+              <span className="text-2xl sm:text-3xl font-display font-bold text-foreground leading-none mb-1">50+</span>
+              <span className="text-xs sm:text-sm text-muted-foreground font-medium leading-none">Proiecte Finalizate</span>
+            </div>
           </div>
-          <div className="w-px h-10 bg-border" />
-          <div className="flex flex-col items-center">
-            <span className="text-2xl font-display font-bold text-foreground">⭐ 5.0</span>
-            <span>Rating Clienți</span>
+
+          <div className="flex-1 w-full sm:w-auto px-6 py-4 rounded-full bg-secondary/50 backdrop-blur-xl border border-white/5 flex flex-row items-center gap-5 shadow-2xl transition hover:-translate-y-1 hover:border-blue-500/30 relative overflow-hidden group">
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+            <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0 relative z-10 border border-accent/20 group-hover:scale-110 transition-transform">
+              <Star className="w-6 h-6 text-accent fill-accent/20" />
+            </div>
+            <div className="flex flex-col text-left relative z-10">
+              <span className="text-2xl sm:text-3xl font-display font-bold text-foreground leading-none mb-1">5.0</span>
+              <span className="text-xs sm:text-sm text-muted-foreground font-medium leading-none">Rating Clienți</span>
+            </div>
           </div>
-          <div className="w-px h-10 bg-border" />
-          <div className="flex flex-col items-center">
-            <span className="text-2xl font-display font-bold text-foreground">2 zile</span>
-            <span>Livrare Rapidă</span>
+
+          <div className="flex-1 w-full sm:w-auto px-6 py-4 rounded-full bg-secondary/50 backdrop-blur-xl border border-white/5 flex flex-row items-center gap-5 shadow-2xl transition hover:-translate-y-1 hover:border-blue-500/30 relative overflow-hidden group">
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+            <div className="w-12 h-12 rounded-full bg-blue-500/10 flex items-center justify-center flex-shrink-0 relative z-10 border border-blue-500/20 group-hover:scale-110 transition-transform">
+              <Zap className="w-6 h-6 text-blue-500" />
+            </div>
+            <div className="flex flex-col text-left relative z-10">
+              <span className="text-2xl sm:text-3xl font-display font-bold text-foreground leading-none mb-1">2 Zile</span>
+              <span className="text-xs sm:text-sm text-muted-foreground font-medium leading-none">Livrare Rapidă</span>
+            </div>
           </div>
         </div>
       </div>

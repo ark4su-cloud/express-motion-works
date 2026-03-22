@@ -49,7 +49,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-36 pb-16 md:pt-20 md:pb-0">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-36 pb-16 md:pt-20 md:pb-0">
       <div className="container mx-auto px-4 relative z-10 text-center">
         <div className="flex flex-wrap justify-center gap-4 mb-8">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium backdrop-blur-sm border border-primary/20">

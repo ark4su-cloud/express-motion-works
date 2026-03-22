@@ -84,8 +84,8 @@ const PricingCard = ({ plan }: { plan: typeof plans[0] }) => {
   };
 
   const orderClass = plan.name === "Basic" ? "order-1 md:order-1" :
-                     plan.name === "Standard" ? "order-2 md:order-3" :
-                     "order-3 md:order-2";
+    plan.name === "Standard" ? "order-2 md:order-3" :
+      "order-3 md:order-2";
 
   return (
     <div className={`h-full flex flex-col ${orderClass} ${plan.highlighted ? "md:-translate-y-4 z-10 relative" : "z-0 relative"}`}>
@@ -99,10 +99,10 @@ const PricingCard = ({ plan }: { plan: typeof plans[0] }) => {
           transition: isHovered ? "transform 0.1s cubic-bezier(0.25, 1, 0.5, 1)" : "transform 1s cubic-bezier(0.2, 0.8, 0.2, 1)",
         }}
         className={`relative rounded-3xl p-8 flex flex-col h-full ${plan.highlighted
-            ? "animate-gradient-shift-bg text-primary-foreground shadow-[0_20px_60px_rgba(0,0,0,0.5)] border-0"
-            : plan.name === "Basic"
-              ? "bg-card border-2 border-primary/20 shadow-2xl"
-              : "bg-card border border-border shadow-2xl hover:border-white/10"
+          ? "animate-gradient-shift-bg text-primary-foreground shadow-[0_20px_60px_rgba(0,0,0,0.5)] border-0"
+          : plan.name === "Basic"
+            ? "bg-card border-2 border-primary/20 shadow-2xl"
+            : "bg-card border border-border shadow-2xl hover:border-white/10"
           }`}
       >
         {/* Inner content */}
@@ -150,8 +150,8 @@ const PricingCard = ({ plan }: { plan: typeof plans[0] }) => {
           <ContactDialog>
             <Button
               className={`w-full py-6 text-base shadow-lg transition-transform hover:scale-105 ${plan.highlighted
-                  ? "bg-white text-primary hover:bg-white/90"
-                  : ""
+                ? "bg-white text-primary hover:bg-white/90"
+                : ""
                 }`}
               variant={plan.highlighted ? "secondary" : "hero"}
             >

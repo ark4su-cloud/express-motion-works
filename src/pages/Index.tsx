@@ -14,13 +14,12 @@ const Index = () => {
       <div className="fixed inset-0 z-0 pointer-events-none">
         {/* Animated gradient background */}
         <div className="absolute inset-0 bg-hero-bg" />
-        <div className="absolute inset-0 hero-noise opacity-[0.06]" />
 
         {/* Floating orbs */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-[-10%] left-[0%] w-[800px] h-[800px] md:w-[1200px] md:h-[1200px] rounded-full bg-primary/30 blur-[100px] md:blur-[130px] animate-float opacity-70 md:opacity-60" />
-          <div className="absolute bottom-[-20%] right-[-10%] w-[600px] h-[600px] md:w-[1000px] md:h-[1000px] rounded-full bg-accent/30 blur-[100px] md:blur-[130px] animate-float opacity-60 md:opacity-50" style={{ animationDelay: "3s" }} />
-          <div className="absolute top-[30%] left-[40%] w-[500px] h-[500px] md:w-[800px] md:h-[800px] rounded-full bg-blue-500/20 blur-[100px] md:blur-[120px] animate-float opacity-60 md:opacity-50" style={{ animationDelay: "5s" }} />
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute top-[-10%] left-[0%] w-[800px] h-[800px] md:w-[1200px] md:h-[1200px] animate-float opacity-70 md:opacity-60 will-change-transform transform-gpu" style={{ background: 'radial-gradient(circle, hsl(var(--primary)/0.25) 0%, transparent 60%)' }} />
+          <div className="absolute bottom-[-20%] right-[-10%] w-[600px] h-[600px] md:w-[1000px] md:h-[1000px] animate-float opacity-60 md:opacity-50 will-change-transform transform-gpu" style={{ background: 'radial-gradient(circle, hsl(var(--accent)/0.25) 0%, transparent 60%)', animationDelay: "3s" }} />
+          <div className="absolute top-[30%] left-[40%] w-[500px] h-[500px] md:w-[800px] md:h-[800px] animate-float opacity-60 md:opacity-50 will-change-transform transform-gpu" style={{ background: 'radial-gradient(circle, rgba(59,130,246,0.15) 0%, transparent 60%)', animationDelay: "5s" }} />
         </div>
 
         {/* Grid pattern */}
@@ -31,9 +30,9 @@ const Index = () => {
         <Navbar />
         <HeroSection />
         <ServicesSection />
-        <PortfolioSection />
         <PricingSection />
         <OrderSection />
+        <PortfolioSection />
         <AboutSection />
         <Footer />
       </div>

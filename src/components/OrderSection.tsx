@@ -17,7 +17,7 @@ const OrderSection = () => {
 
         <div className="max-w-xl mx-auto flex justify-center mt-8">
           <ContactDialog>
-            <Button size="lg" className="w-full sm:min-w-[300px] py-8 text-xl liquid-gradient-btn text-white rounded-xl shadow-xl shadow-primary/20 transition-transform hover:scale-105">
+            <Button size="lg" className="w-auto sm:min-w-[300px] py-8 text-xl liquid-gradient-btn text-white rounded-xl shadow-xl shadow-primary/20 transition-transform hover:scale-105">
               Contactează-mă 
               <Send className="ml-3 h-6 w-6" />
             </Button>

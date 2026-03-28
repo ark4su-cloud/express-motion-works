@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Eye, Star, Zap, CheckCircle2 } from "lucide-react";
+import { Send, Eye, Star, Zap, CheckCircle2, MessageCircle, Instagram, Briefcase } from "lucide-react";
 import { useState, useEffect, useCallback } from "react";
 
 const services = [
@@ -81,11 +81,54 @@ const HeroSection = () => {
           Transformă-ți ideile în conținut vizual de impact.
         </p>
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Button size="lg" className="text-base px-8 py-6 liquid-gradient-btn text-white rounded-xl font-bold w-full sm:w-auto" onClick={() => scrollTo("order")}>
-            Contactează-mă
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
+        <div className="flex flex-col md:flex-row items-center justify-center gap-4 w-full max-w-4xl mx-auto px-4">
+          {/* Telegram */}
+          <a
+            href="https://t.me/ArtioMotion"
+            target="_blank"
+            rel="noreferrer"
+            className="group relative flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-primary/30 backdrop-blur-xl border border-primary/50 shadow-[0_0_25px_rgba(139,92,246,0.25)] hover:shadow-[0_0_45px_rgba(139,92,246,0.6)] transition-all text-white font-bold text-lg hover:-translate-y-1 w-full md:w-auto min-w-[200px] overflow-hidden"
+          >
+            <div className="absolute inset-0 bg-primary/30 opacity-0 group-hover:opacity-100 transition-opacity" />
+            <Send className="h-5 w-5 text-white group-hover:scale-110 transition-transform relative z-10 filter drop-shadow-[0_0_8px_rgba(139,92,246,0.8)]" />
+            <span className="relative z-10 tracking-wide text-white group-hover:text-white transition-colors">Telegram</span>
+          </a>
+
+          {/* WhatsApp */}
+          <a
+            href="https://wa.me/37368189267"
+            target="_blank"
+            rel="noreferrer"
+            className="group relative flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-primary/30 backdrop-blur-xl border border-primary/50 shadow-[0_0_25px_rgba(139,92,246,0.25)] hover:shadow-[0_0_45px_rgba(139,92,246,0.6)] transition-all text-white font-bold text-lg hover:-translate-y-1 w-full md:w-auto min-w-[200px] overflow-hidden"
+          >
+            <div className="absolute inset-0 bg-primary/30 opacity-0 group-hover:opacity-100 transition-opacity" />
+            <MessageCircle className="h-5 w-5 text-white group-hover:scale-110 transition-transform relative z-10 filter drop-shadow-[0_0_8px_rgba(139,92,246,0.8)]" />
+            <span className="relative z-10 tracking-wide text-white group-hover:text-white transition-colors">WhatsApp</span>
+          </a>
+
+          {/* Instagram */}
+          <a
+            href="https://www.instagram.com/artiomotion.md"
+            target="_blank"
+            rel="noreferrer"
+            className="group relative flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-primary/30 backdrop-blur-xl border border-primary/50 shadow-[0_0_25px_rgba(139,92,246,0.25)] hover:shadow-[0_0_45px_rgba(139,92,246,0.6)] transition-all text-white font-bold text-lg hover:-translate-y-1 w-full md:w-auto min-w-[200px] overflow-hidden"
+          >
+            <div className="absolute inset-0 bg-primary/30 opacity-0 group-hover:opacity-100 transition-opacity" />
+            <Instagram className="h-5 w-5 text-white group-hover:scale-110 transition-transform relative z-10 filter drop-shadow-[0_0_8px_rgba(139,92,246,0.8)]" />
+            <span className="relative z-10 tracking-wide text-white group-hover:text-white transition-colors">Instagram</span>
+          </a>
+
+          {/* Fiverr */}
+          <a
+            href="https://www.fiverr.com/s/8zX6GxZ"
+            target="_blank"
+            rel="noreferrer"
+            className="group relative flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-primary/30 backdrop-blur-xl border border-primary/50 shadow-[0_0_25px_rgba(139,92,246,0.25)] hover:shadow-[0_0_45px_rgba(139,92,246,0.6)] transition-all text-white font-bold text-lg hover:-translate-y-1 w-full md:w-auto min-w-[200px] overflow-hidden"
+          >
+            <div className="absolute inset-0 bg-primary/30 opacity-0 group-hover:opacity-100 transition-opacity" />
+            <Briefcase className="h-5 w-5 text-white group-hover:scale-110 transition-transform relative z-10 filter drop-shadow-[0_0_8px_rgba(139,92,246,0.8)]" />
+            <span className="relative z-10 tracking-wide text-white group-hover:text-white transition-colors">Fiverr</span>
+          </a>
         </div>
 
         <div className="mt-12 md:mt-20 max-w-5xl mx-auto flex flex-col sm:flex-row flex-wrap justify-center gap-4">

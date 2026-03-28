@@ -4,8 +4,9 @@ import ServicesSection from "@/components/ServicesSection";
 import PortfolioSection from "@/components/PortfolioSection";
 import PricingSection from "@/components/PricingSection";
 import AboutSection from "@/components/AboutSection";
-import OrderSection from "@/components/OrderSection";
 import Footer from "@/components/Footer";
+
+import ScrollReveal from "@/components/ScrollReveal";
 
 const Index = () => {
   return (
@@ -28,12 +29,27 @@ const Index = () => {
 
       <div className="relative z-10">
         <Navbar />
-        <HeroSection />
-        <ServicesSection />
-        <PricingSection />
-        <OrderSection />
-        <PortfolioSection />
-        <AboutSection />
+        
+        <ScrollReveal>
+          <HeroSection />
+        </ScrollReveal>
+        
+        <ScrollReveal delay={200}>
+          <ServicesSection />
+        </ScrollReveal>
+        
+        <ScrollReveal delay={200}>
+          <PricingSection />
+        </ScrollReveal>
+        
+        <ScrollReveal delay={200}>
+          <PortfolioSection />
+        </ScrollReveal>
+        
+        <ScrollReveal delay={200}>
+          <AboutSection />
+        </ScrollReveal>
+        
         <Footer />
       </div>
     </div>

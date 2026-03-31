@@ -185,7 +185,7 @@ const PricingSection = () => {
 
         <div className="mt-16 text-center max-w-2xl mx-auto px-4">
           <p className="text-muted-foreground text-sm leading-relaxed backdrop-blur-md bg-secondary/20 border border-white/5 rounded-2xl p-4 shadow-lg border-t-white/10">
-            <span className="text-primary font-semibold">* Notă:</span> Acestea sunt prețuri estimative. Costul final poate varia în funcție de complexitatea, durata și cerințele specifice ale fiecărui proiect. <a href="#order" className="text-foreground font-medium underline decoration-primary underline-offset-4 hover:text-primary transition-colors">Contactează-mă</a> pentru o ofertă!
+            <span className="text-primary font-semibold">* Notă:</span> Acestea sunt prețuri estimative. Costul final poate varia în funcție de complexitatea, durata și cerințele specifice ale fiecărui proiect. <ContactDialog><span className="text-foreground font-medium underline decoration-primary underline-offset-4 hover:text-primary transition-colors cursor-pointer">Contactează-mă</span></ContactDialog> pentru o ofertă!
           </p>
         </div>
       </div>

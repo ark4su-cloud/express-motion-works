@@ -11,9 +11,9 @@ const AboutSection = () => {
         </div>
 
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
-          {/* Video Presentation */}
-          <div className="w-full lg:w-3/5 flex-shrink-0">
-            <div className="aspect-video w-full rounded-3xl shadow-[0_0_40px_rgba(var(--primary),0.15)] relative border-none ring-0">
+          {/* Video Presentation - Andocare pentru 3D Morph */}
+          <div className="w-full lg:w-3/5 flex-shrink-0 scroll-mt-32">
+            <div className="aspect-video w-full rounded-3xl relative border-none ring-0 bg-transparent">
               <iframe 
                 src="https://player.vimeo.com/video/1171742310?title=0&byline=0&portrait=0" 
                 className="w-full h-full object-cover rounded-3xl outline-none focus:outline-none border-none ring-0 absolute inset-0"

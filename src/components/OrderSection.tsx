@@ -4,7 +4,7 @@ import { ContactDialog } from "./ContactDialog";
 
 const OrderSection = () => {
   return (
-    <section id="order" className="py-24 relative overflow-hidden">
+    <section id="order" className="py-24 relative">
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12">
           <h2 className="font-display text-4xl md:text-5xl font-bold mb-4">

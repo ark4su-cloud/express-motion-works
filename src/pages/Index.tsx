@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
+import ClientsSection from "@/components/ClientsSection";
 import ServicesSection from "@/components/ServicesSection";
 import PortfolioSection from "@/components/PortfolioSection";
 import PricingSection from "@/components/PricingSection";
@@ -10,7 +11,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background selection:bg-primary/20">
+    <div className="min-h-screen w-full overflow-x-hidden bg-background selection:bg-primary/20">
       {/* Global Animated Background */}
       <div className="fixed inset-0 z-0 pointer-events-none">
         {/* Animated gradient background */}
@@ -29,27 +30,31 @@ const Index = () => {
 
       <div className="relative z-10">
         <Navbar />
-        
+
         <ScrollReveal>
           <HeroSection />
         </ScrollReveal>
-        
-        <ScrollReveal delay={200}>
-          <ServicesSection />
+
+        <ScrollReveal delay={100}>
+          <ClientsSection />
         </ScrollReveal>
-        
-        <ScrollReveal delay={200}>
-          <PricingSection />
-        </ScrollReveal>
-        
-        <ScrollReveal delay={200}>
-          <PortfolioSection />
-        </ScrollReveal>
-        
+
         <ScrollReveal delay={200}>
           <AboutSection />
         </ScrollReveal>
-        
+
+        <ScrollReveal delay={200}>
+          <ServicesSection />
+        </ScrollReveal>
+
+        <ScrollReveal delay={200}>
+          <PricingSection />
+        </ScrollReveal>
+
+        <ScrollReveal delay={200}>
+          <PortfolioSection />
+        </ScrollReveal>
+
         <Footer />
       </div>
     </div>

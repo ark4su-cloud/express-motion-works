@@ -2,7 +2,7 @@ import { PlayCircle, ArrowRight } from "lucide-react";
 
 const PortfolioSection = () => {
   return (
-    <section id="portfolio" className="py-32 relative overflow-hidden">
+    <section id="portfolio" className="py-16 md:py-20 relative">
       {/* Moving Background Shapes */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <div 
@@ -20,12 +20,12 @@ const PortfolioSection = () => {
           Portofoliul <span className="text-gradient">Meu</span>
         </h2>
         
-        <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-16 leading-relaxed">
+        <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-8 md:mb-12 leading-relaxed">
           Puteți vedea toate proiectele mele, animațiile comerciale și concepte recente direct pe profilul meu oficial de Vimeo. Toate lucrările sunt redare la rezoluție și calitate maximă.
         </p>
 
-        {/* The "Turbat" CTA Area */}
-        <div className="relative inline-flex items-center justify-center p-8 md:p-24 w-full md:w-auto">
+        {/* The "Turbat" CTA Area - redus spațiul gol vertical dar lăsat loc pentru grafică */}
+        <div className="relative inline-flex items-center justify-center py-6 md:py-12 px-4 md:px-16 w-full md:w-auto">
            {/* Orbiting / Animated Shapes around button */}
            <div className="absolute top-2 left-6 md:top-6 md:left-6 w-12 h-12 md:w-20 md:h-20 border border-primary/40 rounded-full animate-[spin_10s_linear_infinite]" />
            <div className="absolute bottom-6 right-6 md:bottom-12 md:right-12 w-10 h-10 md:w-16 md:h-16 bg-gradient-to-tr from-accent to-primary rounded-2xl rotate-45 animate-float shadow-[0_0_30px_hsl(var(--primary)/0.4)]" />

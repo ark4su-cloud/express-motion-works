@@ -109,11 +109,18 @@ export const ContactDialog = ({ children }: { children: React.ReactNode }) => {
               <span className="relative z-10">LinkedIn</span>
             </a>
 
-            {/* Fiverr (Full Width across bottom) */}
-            <a href="https://www.fiverr.com/s/8zX6GxZ" target="_blank" rel="noreferrer" className="group col-span-2 relative overflow-hidden flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-[#1dbf73] shadow-[0_0_15px_rgba(29,191,115,0.2)] hover:shadow-[0_0_25px_rgba(29,191,115,0.5)] transition-all text-white font-bold hover:-translate-y-1 mt-1">
+            {/* Fiverr */}
+            <a href="https://www.fiverr.com/s/8zX6GxZ" target="_blank" rel="noreferrer" className="group relative overflow-hidden flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-[#1dbf73] shadow-[0_0_15px_rgba(29,191,115,0.2)] hover:shadow-[0_0_25px_rgba(29,191,115,0.5)] transition-all text-white font-bold hover:-translate-y-1">
               <div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity" />
               <Briefcase className="h-4 w-4 relative z-10" />
               <span className="relative z-10">Fiverr</span>
+            </a>
+
+            {/* UpWork */}
+            <a href="https://www.upwork.com/freelancers/~0179bfed1d991a8639?mp_source=share" target="_blank" rel="noreferrer" className="group relative overflow-hidden flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-[#14a800] shadow-[0_0_15px_rgba(20,168,0,0.2)] hover:shadow-[0_0_25px_rgba(20,168,0,0.5)] transition-all text-white font-bold hover:-translate-y-1">
+              <div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity" />
+              <img src="/logo-upwork.png" alt="UpWork Logo" className="h-5 w-5 relative z-10 group-hover:scale-110 transition-transform object-contain" />
+              <span className="relative z-10">UpWork</span>
             </a>
           </div>
         </div>

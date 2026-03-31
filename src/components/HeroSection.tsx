@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Send, Eye, Star, Zap, CheckCircle2, MessageCircle, Instagram, Briefcase } from "lucide-react";
+import { Send, Eye, Star, Zap, CheckCircle2, MessageCircle, Instagram } from "lucide-react";
 import { useState, useEffect, useCallback } from "react";
 
 const services = [
@@ -49,7 +49,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-36 pb-16 md:pt-20 md:pb-0">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center pt-36 pb-16 md:pt-20 md:pb-0">
       <div className="container mx-auto px-4 relative z-10 text-center">
         <div className="flex flex-wrap justify-center gap-4 mb-8">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium backdrop-blur-sm border border-primary/20">
@@ -118,17 +118,6 @@ const HeroSection = () => {
             <span className="relative z-10 tracking-wide text-white group-hover:text-white transition-colors">Instagram</span>
           </a>
 
-          {/* Fiverr */}
-          <a
-            href="https://www.fiverr.com/s/8zX6GxZ"
-            target="_blank"
-            rel="noreferrer"
-            className="group relative flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-primary/30 backdrop-blur-xl border border-primary/50 shadow-[0_0_25px_rgba(139,92,246,0.25)] hover:shadow-[0_0_45px_rgba(139,92,246,0.6)] transition-all text-white font-bold text-lg hover:-translate-y-1 w-full md:w-auto min-w-[200px] overflow-hidden"
-          >
-            <div className="absolute inset-0 bg-primary/30 opacity-0 group-hover:opacity-100 transition-opacity" />
-            <Briefcase className="h-5 w-5 text-white group-hover:scale-110 transition-transform relative z-10 filter drop-shadow-[0_0_8px_rgba(139,92,246,0.8)]" />
-            <span className="relative z-10 tracking-wide text-white group-hover:text-white transition-colors">Fiverr</span>
-          </a>
         </div>
 
         <div className="mt-12 md:mt-20 max-w-5xl mx-auto flex flex-col sm:flex-row flex-wrap justify-center gap-4">

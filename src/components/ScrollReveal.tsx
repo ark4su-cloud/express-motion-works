@@ -38,7 +38,7 @@ const ScrollReveal: React.FC<ScrollRevealProps> = ({ children, className = "", d
   return (
     <div
       ref={ref}
-      className={`transition-all duration-1000 ease-out transform-gpu will-change-[transform,opacity] ${
+      className={`transition-all duration-1000 ease-out ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       } ${className}`}
       style={{ transitionDelay: `${delay}ms` }}

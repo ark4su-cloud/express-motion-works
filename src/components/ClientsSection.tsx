@@ -147,7 +147,10 @@ const ClientsSection = () => {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[120%] bg-primary/5 rounded-[3rem] blur-[80px] -z-10 pointer-events-none"></div>
 
         {/* Forma elegantă glassmorphic (Sleek Light/Holo) */}
-        <div className="relative rounded-[2rem] sm:rounded-[4rem] bg-gradient-to-tr from-white/70 via-background/80 to-primary/10 border border-white/60 overflow-hidden backdrop-blur-2xl shadow-[0_20px_80px_-20px_rgba(0,0,0,0.1)]">
+        <div 
+          className="relative rounded-[2rem] sm:rounded-[4rem] bg-gradient-to-tr from-white/70 via-background/80 to-primary/10 border border-white/60 overflow-hidden backdrop-blur-2xl shadow-[0_20px_80px_-20px_rgba(0,0,0,0.1)] isolation-auto"
+          style={{ WebkitMaskImage: '-webkit-radial-gradient(white, black)' }}
+        >
           
           {/* Orbs de lumină internă colorată (Efectul tău de Spray estompat, impecabil) */}
           <div className="absolute -top-32 left-0 w-[400px] h-[400px] bg-violet-400/20 rounded-full blur-[90px] animate-pulse pointer-events-none -z-10"></div>

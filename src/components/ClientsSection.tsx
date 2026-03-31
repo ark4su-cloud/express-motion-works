@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 
 type ClientData = {
   name: string;
@@ -74,31 +74,12 @@ const ClientLogo = ({ client, index }: { client: ClientData, index: number }) =>
 };
 
 const ClientsSection = () => {
-  const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.15 } // Se declanșează când 15% din secțiune intră în ecran
-    );
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-    return () => observer.disconnect();
-  }, []);
 
   return (
     <section
       ref={sectionRef}
-      className={`py-20 relative z-10 w-full mt-10 md:mt-0 px-4 transition-all duration-[1500ms] ease-out ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-24"
-        }`}
+      className="py-20 relative z-10 w-full mt-10 md:mt-0 px-4"
     >
       <div className="container mx-auto mb-16 text-center text-balance px-4">
         <h2 className="text-lg sm:text-2xl md:text-3xl tracking-[0.15em] sm:tracking-[0.2em] uppercase font-bold mx-auto text-foreground/90">

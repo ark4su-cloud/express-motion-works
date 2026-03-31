@@ -30,29 +30,12 @@ const Index = () => {
 
       <div className="relative z-10">
         <Navbar />
-
         <HeroSection />
-
-        <ScrollReveal delay={0}>
-          <ClientsSection />
-        </ScrollReveal>
-
-        <ScrollReveal delay={0}>
-          <AboutSection />
-        </ScrollReveal>
-
-        <ScrollReveal delay={0}>
-          <ServicesSection />
-        </ScrollReveal>
-
-        <ScrollReveal delay={0}>
-          <PricingSection />
-        </ScrollReveal>
-
-        <ScrollReveal delay={0}>
-          <PortfolioSection />
-        </ScrollReveal>
-
+        <ClientsSection />
+        <AboutSection />
+        <ServicesSection />
+        <PricingSection />
+        <PortfolioSection />
         <Footer />
       </div>
     </div>

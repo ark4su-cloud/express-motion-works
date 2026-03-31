@@ -7,7 +7,7 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-transparent backdrop-blur-2xl border-b border-white/10 shadow-[0_4px_30px_rgba(0,0,0,0.1)] transition-all duration-300">
-      <div className="container mx-auto flex items-center justify-between h-20 px-4 md:px-8">
+      <div className="container mx-auto flex items-center justify-between h-20 px-6">
         <div className="flex items-center gap-3 cursor-pointer group" onClick={() => scrollTo("hero")}>
           <div className="relative">
             <div className="absolute inset-0 bg-primary/20 blur-md rounded-full group-hover:bg-primary/40 transition-colors" />

@@ -157,8 +157,8 @@ const ClientsSection = () => {
           {/* Noise super subtil de premium */}
           <div className="absolute inset-0 opacity-[0.02] bg-noise mix-blend-multiply pointer-events-none"></div>
 
-          {/* Wrapper cu mască lentă de estompare */}
-          <div className="relative py-12 sm:py-20 w-full inline-flex flex-col gap-10 [mask-image:_linear-gradient(to_right,transparent_0,_black_15%,_black_85%,transparent_100%)]">
+          {/* Wrapper cu mască lentă de estompare și tăiere forțată a colțurilor - Centrat cu justify-center */}
+          <div className="relative py-12 sm:py-20 w-full flex flex-col items-center justify-center gap-10 overflow-hidden rounded-[2rem] sm:rounded-[4rem] [mask-image:_linear-gradient(to_right,transparent_0,_black_15%,_black_85%,transparent_100%)]">
             
             {/* DESKTOP ONLY: Toate companiile într-un singur rând imens */}
             <ul className="hidden md:flex items-center justify-start animate-scroll-slow w-max">

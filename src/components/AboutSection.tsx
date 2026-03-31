@@ -10,9 +10,9 @@ const AboutSection = () => {
           </h2>
         </div>
 
-        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-16 px-6">
           {/* Video Presentation - Andocare pentru 3D Morph */}
-          <div className="w-full lg:w-3/5 flex-shrink-0 scroll-mt-32">
+          <div className="w-full lg:w-1/2 flex-shrink-0 scroll-mt-32">
             <div className="aspect-video w-full rounded-3xl relative border-none ring-0 bg-transparent">
               <iframe 
                 src="https://player.vimeo.com/video/1171742310?title=0&byline=0&portrait=0" 

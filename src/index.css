@@ -84,6 +84,11 @@
 }
 
 @layer base {
+  html {
+    @apply scroll-smooth;
+    scroll-behavior: smooth;
+  }
+
   * {
     @apply border-border;
   }
@@ -142,26 +147,28 @@
     background-size: 256px 256px;
   }
 
-.sweet-sweep {
-  animation: sweet-sweep 8s ease-in-out infinite;
-}
+  .sweet-sweep {
+    animation: sweet-sweep 8s ease-in-out infinite;
+  }
 
-.sweet-sweep-delayed {
-  animation: sweet-sweep 8s ease-in-out infinite;
-  animation-delay: 4s;
-}
+  .sweet-sweep-delayed {
+    animation: sweet-sweep 8s ease-in-out infinite;
+    animation-delay: 4s;
+  }
 
-@keyframes sweet-sweep {
-  0% {
-    transform: translateX(-200%) skewX(-20deg);
+  @keyframes sweet-sweep {
+    0% {
+      transform: translateX(-200%) skewX(-20deg);
+    }
+
+    35% {
+      transform: translateX(400%) skewX(-20deg);
+    }
+
+    100% {
+      transform: translateX(400%) skewX(-20deg);
+    }
   }
-  35% {
-    transform: translateX(400%) skewX(-20deg);
-  }
-  100% {
-    transform: translateX(400%) skewX(-20deg);
-  }
-}
 
   .bg-mesh {
     background-size: 40px 40px;
@@ -264,6 +271,11 @@
 }
 
 @keyframes marquee-lr {
-  0% { transform: translateX(-50%); }
-  100% { transform: translateX(0); }
+  0% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }

@@ -95,11 +95,10 @@ const ClientsSection = () => {
   }, []);
 
   return (
-    <section 
+    <section
       ref={sectionRef}
-      className={`py-20 relative z-10 w-full mt-10 md:mt-0 px-4 transition-all duration-[1500ms] ease-out ${
-        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-24"
-      }`}
+      className={`py-20 relative z-10 w-full mt-10 md:mt-0 px-4 transition-all duration-[1500ms] ease-out ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-24"
+        }`}
     >
       <div className="container mx-auto mb-16 text-center text-balance px-4">
         <h2 className="text-lg sm:text-2xl md:text-3xl tracking-[0.15em] sm:tracking-[0.2em] uppercase font-bold mx-auto text-foreground/90">
@@ -140,18 +139,15 @@ const ClientsSection = () => {
           background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
         }
       `}</style>
-      
+
       <div className="max-w-[1400px] mx-auto relative px-2 sm:px-6 z-20">
-        
+
         {/* Glow stins delicat la baza containerului */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[120%] bg-primary/5 rounded-[3rem] blur-[80px] -z-10 pointer-events-none"></div>
 
         {/* Forma elegantă glassmorphic (Sleek Light/Holo) */}
-        <div 
-          className="relative rounded-[2rem] sm:rounded-[4rem] bg-gradient-to-tr from-white/70 via-background/80 to-primary/10 border border-white/60 overflow-hidden backdrop-blur-2xl shadow-[0_20px_80px_-20px_rgba(0,0,0,0.1)] isolation-auto"
-          style={{ WebkitMaskImage: '-webkit-radial-gradient(white, black)' }}
-        >
-          
+        <div className="relative rounded-[2rem] sm:rounded-[4rem] bg-gradient-to-tr from-white/70 via-background/80 to-primary/10 border border-white/60 overflow-hidden backdrop-blur-2xl shadow-[0_20px_80px_-20px_rgba(0,0,0,0.1)]">
+
           {/* Orbs de lumină internă colorată (Efectul tău de Spray estompat, impecabil) */}
           <div className="absolute -top-32 left-0 w-[400px] h-[400px] bg-violet-400/20 rounded-full blur-[90px] animate-pulse pointer-events-none -z-10"></div>
           <div className="absolute -bottom-32 right-0 w-[400px] h-[400px] bg-blue-400/20 rounded-full blur-[90px] animate-pulse pointer-events-none -z-10" style={{ animationDelay: '3s' }}></div>
@@ -162,7 +158,7 @@ const ClientsSection = () => {
 
           {/* Wrapper cu mască lentă de estompare și tăiere forțată a colțurilor - Centrat cu justify-center */}
           <div className="relative py-12 sm:py-20 w-full flex flex-col items-center justify-center gap-10 overflow-hidden rounded-[2rem] sm:rounded-[4rem] [mask-image:_linear-gradient(to_right,transparent_0,_black_15%,_black_85%,transparent_100%)]">
-            
+
             {/* DESKTOP ONLY: Toate companiile într-un singur rând imens */}
             <ul className="hidden md:flex items-center justify-start animate-scroll-slow w-max">
               {desktopClients.map((client, index) => (
@@ -191,7 +187,7 @@ const ClientsSection = () => {
             </ul>
 
           </div>
-          
+
         </div>
       </div>
     </section>

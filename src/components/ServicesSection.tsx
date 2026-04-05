@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Film, Paintbrush, Globe, Check, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { ContactDialog } from "./ContactDialog";
 
 const services = [
   {
@@ -121,9 +122,11 @@ const ServicesSection = () => {
                    <span className="font-display text-xl font-bold text-accent">€{logoPricing.price}</span>
                  </div>
               </div>
-              <Button className="w-full py-6 font-bold text-base bg-accent text-accent-foreground hover:bg-accent/90 shadow-[0_0_20px_rgba(var(--accent),0.3)] transition-all hover:scale-[1.02] cursor-pointer" onClick={() => scrollTo("order")}>
-                Comandă Logo
-              </Button>
+              <ContactDialog>
+                <Button className="w-full py-6 font-bold text-base bg-accent text-accent-foreground hover:bg-accent/90 shadow-[0_0_20px_rgba(var(--accent),0.3)] transition-all hover:scale-[1.02] cursor-pointer">
+                  Comandă Logo
+                </Button>
+              </ContactDialog>
             </div>
           </div>
 
@@ -154,9 +157,11 @@ const ServicesSection = () => {
                    <span className="font-display text-xl font-bold text-blue-400">La cerere</span>
                  </div>
               </div>
-              <Button className="w-full py-6 font-bold text-base bg-blue-600 text-white hover:bg-blue-600/90 shadow-[0_0_20px_rgba(59,130,246,0.3)] transition-all hover:scale-[1.02] cursor-pointer" onClick={() => scrollTo("order")}>
-                Cere Ofertă
-              </Button>
+              <ContactDialog>
+                <Button className="w-full py-6 font-bold text-base bg-blue-600 text-white hover:bg-blue-600/90 shadow-[0_0_20px_rgba(59,130,246,0.3)] transition-all hover:scale-[1.02] cursor-pointer">
+                  Cere Ofertă
+                </Button>
+              </ContactDialog>
             </div>
           </div>
         </div>

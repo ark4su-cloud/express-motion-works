@@ -79,9 +79,9 @@ const ClientsSection = () => {
   return (
     <section
       ref={sectionRef}
-      className="py-20 relative z-10 w-full mt-10 md:mt-0 px-4"
+      className="py-10 md:py-20 relative z-10 w-full mt-4 md:mt-0 px-0 sm:px-4"
     >
-      <div className="container mx-auto mb-16 text-center text-balance px-4">
+      <div className="container mx-auto mb-8 md:mb-16 text-center text-balance px-4">
         <h2 className="text-lg sm:text-2xl md:text-3xl tracking-[0.15em] sm:tracking-[0.2em] uppercase font-bold mx-auto text-foreground/90">
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary via-purple-400 to-blue-500">
             Companii și Antreprenori

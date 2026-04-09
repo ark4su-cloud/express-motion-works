@@ -2,9 +2,9 @@ import { MapPin, Users, Award, Briefcase, Youtube, Instagram, Music, PlayCircle 
 
 const AboutSection = () => {
   return (
-    <section id="about" className="py-24 relative z-10">
+    <section id="about" className="py-10 md:py-24 relative z-10">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-8 md:mb-16">
           <h2 className="font-display text-4xl md:text-5xl font-bold mb-4">
             Despre <span className="text-gradient">Mine</span>
           </h2>

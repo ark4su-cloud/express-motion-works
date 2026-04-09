@@ -49,39 +49,39 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center pt-36 pb-16 md:pt-20 md:pb-0">
-      <div className="container mx-auto px-6 relative z-10 text-center">
-        <div className="flex flex-wrap justify-center gap-4 mb-8">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium backdrop-blur-sm border border-primary/20">
-            <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+    <section id="hero" className="relative min-h-[100dvh] md:min-h-screen flex items-center justify-center pt-24 pb-10 md:pt-20 md:pb-0">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10 text-center">
+        <div className="flex flex-row flex-nowrap justify-center gap-2 sm:gap-4 mb-4 sm:mb-8">
+          <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-primary/10 text-primary text-[10px] sm:text-sm font-medium backdrop-blur-sm border border-primary/20 whitespace-nowrap">
+            <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-primary animate-pulse flex-shrink-0" />
             After Effects Specialist
           </div>
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-500/10 text-green-500 text-sm font-medium backdrop-blur-sm border border-green-500/20">
-            <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+          <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-green-500/10 text-green-500 text-[10px] sm:text-sm font-medium backdrop-blur-sm border border-green-500/20 whitespace-nowrap">
+            <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-green-500 animate-pulse flex-shrink-0" />
             Contact rapid
           </div>
         </div>
 
-        <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mb-4">
+        <h1 className="font-display text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mb-2 sm:mb-4">
           Motion Design
           <br />
           <span className="text-gradient-animated">Profesional</span>
         </h1>
 
         {/* Typewriter effect */}
-        <div className="h-12 md:h-14 flex items-center justify-center mb-8">
-          <span className="font-mono text-lg md:text-2xl text-primary/80">
+        <div className="h-8 sm:h-12 md:h-14 flex items-center justify-center mb-4 sm:mb-8">
+          <span className="font-mono text-base sm:text-lg md:text-2xl text-primary/80">
             {displayText}
-            <span className="inline-block w-[2px] h-6 md:h-7 bg-primary ml-1 animate-blink align-middle" />
+            <span className="inline-block w-[2px] h-5 sm:h-6 md:h-7 bg-primary ml-1 animate-blink align-middle" />
           </span>
         </div>
 
-        <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10">
+        <p className="text-sm sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-6 sm:mb-10 px-2 lg:px-0">
           Animații custom, editare template-uri, promo-uri și explainer-e.
           Transformă-ți ideile în conținut vizual de impact.
         </p>
 
-        <div className="flex flex-col md:flex-row items-center justify-center gap-4 w-full max-w-4xl mx-auto px-4">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-3 sm:gap-4 w-full max-w-4xl mx-auto px-4">
           {/* Telegram */}
           <a
             href="https://t.me/ArtioMotion"

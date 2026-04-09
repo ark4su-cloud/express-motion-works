@@ -11,12 +11,12 @@ const AboutSection = () => {
         </div>
 
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-16 px-6">
-          {/* Video Presentation - Andocare pentru 3D Morph */}
-          <div className="w-full lg:w-1/2 flex-shrink-0 scroll-mt-32 pointer-events-none">
-            <div className="aspect-video w-full rounded-3xl relative border-none ring-0 bg-transparent pointer-events-none">
+          {/* Video Presentation */}
+          <div className="w-full lg:w-1/2 flex-shrink-0 scroll-mt-32 flex justify-center">
+            <div className="aspect-[9/16] w-full max-w-[320px] rounded-3xl relative border-none ring-0 bg-transparent shadow-2xl overflow-hidden border border-white/10">
               <iframe 
-                src="https://player.vimeo.com/video/1171742310?title=0&byline=0&portrait=0&background=1&autoplay=1&muted=1&loop=1" 
-                className="w-full h-full object-cover rounded-3xl outline-none focus:outline-none border-none ring-0 absolute inset-0 pointer-events-none"
+                src="https://player.vimeo.com/video/1171742310?title=0&byline=0&portrait=0" 
+                className="w-full h-full object-cover outline-none focus:outline-none border-none ring-0 absolute inset-0"
                 allow="autoplay; fullscreen; picture-in-picture"
                 allowFullScreen
                 frameBorder="0"
